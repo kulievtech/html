@@ -14,81 +14,89 @@
         <form id="form-1">
 
             <div class="personal_info">
-                <label for=""></label>
-                <input type="text">
-                <label for=""></label>
-                <input type="text">
-                <label for=""></label>
-                <input type="text">
-                <label for=""></label>
-                <input type="text">
-                <label for=""></label>
-                <input type="text">
-                <label for=""></label>
-                <input type="text">
+                <label for="fullnameInput">Full Name</label>
+                <input type="text" name="fullname" id="fullnameInput">
+                <label for="emailInput">Email</label>
+                <input type="email" name="email" id="emailInput" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$">
+                <label for="phonenumberInput">Phone number (Format: 123-456-7890): 123-456-7890</label>
+                <input type="tel" name="phonenumber" id="phonenumberInput" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}">
+                <label for="dobInput">Birthdate</label>
+                <input type="date" name="dateofbirth" id="dobInput" min="1974-01-02" max="2000-01-02">
+                <label for="ageInput">Age</label>
+                <input type="number" name="age" id="ageInput" min="10" max="60" step="5">
+                <label for="male">Male</label>
+                <input type="radio" name="gender" id="male">
+                <label for="female">Female</label>
+                <input type="radio" name="gender" id="female">
             </div>
 
             <div class="account_details">
-                <label for=""></label>
-                <input type="text">
-                <label for=""></label>
-                <input type="text">
-                <label for=""></label>
-                <input type="text">
+                <label for="usernameInput">Username</label>
+                <input type="text" name="username" id="usernameInput">
+                <label for="passwordInput">Password</label>
+                <input type="password" name="password" id="passwordInput">
+                <label for="hiddenInput">Secret Message</label>
+                <input type="hidden" name="hiddenMessage" id="hiddenInput">
             </div>
 
             <div class="preferences">
-                <label for=""></label>
-                <input type="text">
-                <label for=""></label>
-                <input type="text">
-                <label for=""></label>
-                <input type="text">
+                <label for="colorInput">Color</label>
+                <input type="color" name="favoriteColor" id="colorInput">
+                <label for="checkboxInput">Newsletter Subscription</label>
+                <input type="checkbox" name="subscription" id="checkboxInput">
+                <label for="languageInput">Preferred Language</label>
+                <select name="preferredLanguage" id="languageInput">
+                    <option value="English">English</option>
+                    <option value="French">French</option>
+                    <option value="Spanish">Spanish</option>
+                    <option value="Russian">Russian</option>
+                    <option value="Italian">Italian</option>
+                    <option value="Korean">Korean</option>
+                    <option value="Japanese">Japanese</option>
+                    <option value="Portuguese">Portuguese</option>
+                </select>
             </div>
 
             <div class="attachments">
-                <label for=""></label>
-                <input type="text">
+                <label for="avatarInput">Profile Picture</label>
+                <input type="file" name="avatar" id="avatarInput" accept="image/*">
             </div>
 
             <div class="location">
-                <label for=""></label>
-                <input type="text">
+                <label for="urlInput">Website</label>
+                <input type="url" name="url" id="urlInput" pattern="https://.*">
             </div>
 
             <div class="feedback">
-                <label for=""></label>
-                <input type="text">
-                <label for=""></label>
-                <input type="text">
+                <label for="rangeInput">Satisfaction Rating</label>
+                <input type="range" name="satisfactionRange" id="rangeInput" min="1" max="20" step="3">
+                <label for="commentsInput">Comments</label>
+                <textarea name="comments" id="commentsInput" cols="10" rows="5"></textarea>
             </div>
 
             <div class="schedule">
-                <label for=""></label>
-                <input type="text">
-                <label for=""></label>
-                <input type="text">
-                <label for=""></label>
-                <input type="text">
+                <label for="timeInput">Preferred Meeting Time</label>
+                <input type="time" name="preferredTime" id="timeInput">
+                <label for="dayInput">Preferred Meeting Day</label>
+                <input type="week" name="preferredDay" id="dayInput">
+                <label for="monthInput">Preferred Meeting Month</label>
+                <input type="month" name="preferredMonth" id="monthInput">
             </div>
 
             <div class="search">
-                <label for=""></label>
-                <input type="text">
+                <label for="searchInput">Search for articles</label>
+                <input type="search" name="searchResults" id="searchInput">
             </div>
 
             <div class="submit_reset">
-                <label for=""></label>
-                <input type="text">
-                <label for=""></label>
-                <input type="text">
-                <label for=""></label>
-                <input type="text">
+                <input type="submit" name="submit" value="Submit My Application" >
+                <input type="reset" name="reset" value="Reset My Application" >
+                <button>Sign Up <img src="./tesla.jpg" alt="teslalogo"> <img src="./boring_company.png" alt="boringcompanylogo"></button>
             </div>
 
             <div class="clickable_image">
-                <label for=""></label>
-                <input type="text">
+                <label for="imageInput">Icon Image</label>
+                <input type="image" name="iconImage" id="imageInput" src="./japan.jpg">
             </div>
 
         </form>
