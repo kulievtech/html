@@ -5,9 +5,7 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Inputs</title>
-        <style>
-
-        </style>
+        <link rel="stylesheet" href="./styles.css">
     </head>
     <body>
         <h1>Multi-Purpose HTML Form</h1>
@@ -18,7 +16,7 @@
                 <input type="text" name="fullname" id="fullnameInput">
                 <label for="emailInput">Email</label>
                 <input type="email" name="email" id="emailInput" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$">
-                <label for="phonenumberInput">Phone number (Format: 123-456-7890): 123-456-7890</label>
+                <label for="phonenumberInput">Phone number <br> (Format): <br> 123-456-7890</label>
                 <input type="tel" name="phonenumber" id="phonenumberInput" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}">
                 <label for="dobInput">Birthdate</label>
                 <input type="date" name="dateofbirth" id="dobInput" min="1974-01-02" max="2000-01-02">
@@ -91,7 +89,7 @@
             <div class="submit_reset">
                 <input type="submit" name="submit" value="Submit My Application" >
                 <input type="reset" name="reset" value="Reset My Application" >
-                <button>Sign Up <img src="./tesla.jpg" alt="teslalogo"> <img src="./boring_company.png" alt="boringcompanylogo"></button>
+                <button>Sign Up <img src="./signup.svg" alt="signup"></button>
             </div>
 
             <div class="clickable_image">
