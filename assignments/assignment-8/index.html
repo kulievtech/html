@@ -17,7 +17,7 @@
             <label for="fullNameInput">Full Name</label>
             <input
                 type="text"
-                name="fullNameInput"
+                name="fullName"
                 id="fullNameInput"
                 required
             />
@@ -47,7 +47,7 @@
             <label for="numberOfGuestsInput"></label>
             <input
                 type="number"
-                name="numberOfGuests"
+                name="numberOfGuestsComing"
                 id="numberOfGuestsInput"
                 min="1"
                 max="7"
@@ -58,15 +58,15 @@
             <label for="favoriteMealSelect">Choose your favorite meal</label>
             <select name="favoritemeal" id="favoriteMealSelect" required>
                 <option value="vegetarian">Vegetarian</option>
-                <option value="non-vegetarian">Non-vegetarian</option>
+                <option value="nonVegetarian">Non-vegetarian</option>
                 <option value="vegan">Vegan</option>
-                <option value="gluten-free">Gluten-free</option>
+                <option value="glutenFree">Gluten-free</option>
             </select>
             <br />
-            <label for="comments">Post your comments here</label>
+            <label for="commentsTextarea">Post your comments here</label>
             <textarea
-                name="comments"
-                id="comments"
+                name="commentsOfGuests"
+                id="commentsTextarea"
                 cols="10"
                 rows="4"
             ></textarea>
