@@ -4,87 +4,73 @@
         <meta charset="UTF-8" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Feedback Survey</title>
+        <title>Support Ticket</title>
     </head>
     <body>
-        <h1>
-            Please fill out the survey below. Your feedback is greatly
-            appreciated!
-        </h1>
+        <h1>Please address the following ticket by tomorrow!</h1>
 
         <form>
             <label for="fullNameInput">Full Name</label>
             <input type="text" name="fullName" id="fullNameInput" />
 
-            <h2>Rate your overall experience</h2>
+            <label for="emailInput">Email</label>
+            <input type="email" name="email" id="emailInput" required />
 
-            <label for="excellentRadioInput">Excellent</label>
+            <h2>Select the priority of the issue</h2>
+
+            <label for="lowRadioInput">Low</label>
             <input
                 type="radio"
-                name="overallExperienceExcellent"
-                id="excellentRadioInput"
-                value="Excellent"
+                name="lowPriorityIssue"
+                id="lowRadioInput"
+                value="Low"
             />
 
-            <label for="goodRadioInput">Good</label>
+            <label for="mediumRadioInput">Medium</label>
             <input
                 type="radio"
-                name="overallExperienceGood"
-                id="goodRadioInput"
-                value="Good"
+                name="mediumPriorityIssue"
+                id="lowRadioInput"
+                value="Medium"
             />
 
-            <label for="averageRadioInput">Average</label>
+            <label for="highRadioInput">High</label>
             <input
                 type="radio"
-                name="overallExperienceAverage"
-                id="averageRadioInput"
-                value="Average"
-            />
-
-            <label for="poorRadioInput">Poor</label>
-            <input
-                type="radio"
-                name="overallExperiencePoor"
-                id="PoorRadioInput"
-                value="Poor"
-            />
-
-            <label for="veryPoorRadioInput">Very Poor</label>
-            <input
-                type="radio"
-                name="overallExperienceVeryPoor"
-                id="veryPoorRadioInput"
-                value="Very Poor"
+                name="highPriorityIssue"
+                id="highRadioInput"
+                value="High"
             />
 
             <br />
 
-            <label for="experienceCommentsTextarea"
-                >Please add any comments regarding your experience.</label
+            <label for="issueCategorySelect">Please select the category of the issue</label>
+            <select name="issueCategory" id="issueCategorySelect">
+                <option value="Technical Issue">Technical Issue</option>
+                <option value="Billing">Billing</option>
+                <option value="Account Management">Account Management</option>
+                <option value="Other">Other</option>
+            </select>
+
+            <label for="commentsInDetailsTextarea"
+                >Please describe the issue in details</label
             >
             <textarea
-                name="userExperienceComments"
-                id="experienceCommentsTextarea"
+                name="commentsInDetails"
+                id="commentsInDetailsTextarea"
                 cols="15"
                 rows="5"
             ></textarea>
 
-            <label for="phoneNumberInput">Phone Number</label>
-            <input type="tel" name="phoneNumber" id="phoneNumberInput" />
+            <br>
 
-            <label for="preferredContactInput"
-                >Please choose your preferred contact method</label
-            >
-            <select name="preferredContactMethod" id="preferredContactInput">
-                <option value="Phone">Phone</option>
-                <option value="Email">Email</option>
-            </select>
+            <label for=relevantIssueScreenshotsInput">Please upload relevant screenshots of the issue</label>
+            <input type="file" name="relevantIssueScreenshots" id="relevantIssueScreenshotsInput" required accept="images/*">
 
             <br />
 
             <label for="extraCommentsTextarea"
-                >Please add any suggestions or comments here</label
+                >Please add any information or steps to reproduce the issue</label
             >
             <textarea
                 name="userExtraComments"
