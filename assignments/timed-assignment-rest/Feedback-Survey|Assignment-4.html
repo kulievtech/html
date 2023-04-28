@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Feedback Survey</title>
+    </head>
+    <body>
+        <h1>
+            Please fill out the survey below. Your feedback is greatly
+            appreciated!
+        </h1>
+
+        <form>
+            <label for="fullNameInput">Full Name</label>
+            <input type="text" name="fullName" id="fullNameInput" />
+
+            <h2>Rate your overall experience</h2>
+
+            <label for="excellentRadioInput">Excellent</label>
+            <input
+                type="radio"
+                name="overallExperienceExcellent"
+                id="excellentRadioInput"
+                value="Excellent"
+            />
+
+            <label for="goodRadioInput">Good</label>
+            <input
+                type="radio"
+                name="overallExperienceGood"
+                id="goodRadioInput"
+                value="Good"
+            />
+
+            <label for="averageRadioInput">Average</label>
+            <input
+                type="radio"
+                name="overallExperienceAverage"
+                id="averageRadioInput"
+                value="Average"
+            />
+
+            <label for="poorRadioInput">Poor</label>
+            <input
+                type="radio"
+                name="overallExperiencePoor"
+                id="PoorRadioInput"
+                value="Poor"
+            />
+
+            <label for="veryPoorRadioInput">Very Poor</label>
+            <input
+                type="radio"
+                name="overallExperienceVeryPoor"
+                id="veryPoorRadioInput"
+                value="Very Poor"
+            />
+
+            <br />
+
+            <label for="experienceCommentsTextarea"
+                >Please add any comments regarding your experience.</label
+            >
+            <textarea
+                name="userExperienceComments"
+                id="experienceCommentsTextarea"
+                cols="15"
+                rows="5"
+            ></textarea>
+
+            <label for="phoneNumberInput">Phone Number</label>
+            <input type="tel" name="phoneNumber" id="phoneNumberInput" />
+
+            <label for="preferredContactInput"
+                >Please choose your preferred contact method</label
+            >
+            <select name="preferredContactMethod" id="preferredContactInput">
+                <option value="Phone">Phone</option>
+                <option value="Email">Email</option>
+            </select>
+
+            <br />
+
+            <label for="extraCommentsTextarea"
+                >Please add any suggestions or comments here</label
+            >
+            <textarea
+                name="userExtraComments"
+                id="extraCommentsTextarea"
+                cols="15"
+                rows="5"
+            ></textarea>
+        </form>
+
+        <input type="submit" value="Submit" />
+    </body>
+</html>
