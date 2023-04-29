@@ -25,8 +25,15 @@
                 required
             />
 
-            <label for="">I agree to terms and conditions</label>
-            <input type="checkbox" required />
+            <label for="termsConditionsCheckbox"
+                >I agree to terms and conditions</label
+            >
+            <input
+                type="checkbox"
+                name="termsAndConditions"
+                id="termsConditionsCheckbox"
+                required
+            />
 
             <label for="countrySelect">Select your Country</label>
             <select name="contestantCountry" id="countrySelect">
@@ -40,7 +47,7 @@
                 >Write a brief description or story about your photo</label
             >
             <textarea
-                name="descriptionOfThePhoto"
+                name="photoDescription"
                 id="descriptionTextarea"
                 cols="15"
                 rows="5"
