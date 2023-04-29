@@ -1,74 +1,78 @@
 <!DOCTYPE html>
 <html lang="en">
-   <head>
-       <meta charset="UTF-8" />
-       <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-       <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-       <title>Assignment 8.3</title>
-   </head>
-   <body>
-       <h1>Please fill out the application below to get an interview</h1>
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Assignment 8.3</title>
+    </head>
+    <body>
+        <h1>Please fill out the application below to get an interview</h1>
 
+        <form>
+            <label for="fullNameInput">Full Name</label>
+            <input type="text" name="fullName" id="fullNameInput" required />
 
-       <form>
-           <label for="fullNameInput">Full Name</label>
-           <input type="text" name="fullName" id="fullNameInput" required />
+            <label for="phoneNumberInput">Phone Number</label>
+            <input
+                type="tel"
+                name="phoneNumber"
+                id="phoneNumberInput"
+                pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
+                required
+            />
 
+            <label for="emailInput">Email Address</label>
+            <input type="email" name="email" id="emailInput" required />
 
-           <label for="phoneNumberInput">Phone Number</label>
-           <input
-               type="tel"
-               name="phoneNumber"
-               id="phoneNumberInput"
-               pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
-               required
-           />
+            <label for="coverLetterTextarea"
+                >Please write a cover letter here</label
+            >
+            <textarea
+                name="candidateCoverLetter"
+                id="coverLetterTextarea"
+                cols="15"
+                rows="5"
+            ></textarea>
 
+            <br />
 
-           <label for="emailInput">Email Address</label>
-           <input type="email" name="email" id="emailInput" required />
+            <label for="fileInput">Upload your Resume</label>
+            <input
+                type="file"
+                name="resume"
+                id="fileInput"
+                required
+                accept="images/*"
+            />
 
+            <br />
 
-           <label for="coverLetterTextarea"
-               >Please write a cover letter here</label
-           >
-           <textarea
-               name="candidateCoverLetter"
-               id="coverLetterTextarea"
-               cols="15"
-               rows="5"
-           ></textarea>
+            <label for="educationLevelSelect"
+                >Please select your highest level of education</label
+            >
+            <select name="educationLevel" id="educationLevelSelect">
+                <option value="High School">High School</option>
+                <option value="Associate's Degree">Associate's Degree</option>
+                <option value="Bachelor's Degree">Bachelor's Degree</option>
+                <option value="Master's Degree">Master's Degree</option>
+                <option value="PhD">PhD</option>
+            </select>
 
+            <br />
 
-           <br>
+            <label for="additionalInfoTextarea"
+                >Please list any additional qualifications or
+                certifications</label
+            >
+            <textarea
+                name="additionalInfo"
+                id="additionalInfoTextarea"
+                cols="15"
+                rows="5"
+            ></textarea>
 
-
-           <label for="fileInput">Upload your Resume</label>
-           <input type="file" name="resume" id="fileInput" required />
-
-
-           <br>
-
-
-           <label for="educationLevelSelect">Please select your highest level of education</label>
-           <select name="educationLevel" id="educationLevelSelect">
-               <option value="High School">High School</option>
-               <option value="Associate's Degree">Associate's Degree</option>
-               <option value="Bachelor's Degree">Bachelor's Degree</option>
-               <option value="Master's Degree">Master's Degree</option>
-               <option value="PhD">PhD</option>
-           </select>
-
-
-           <br>
-
-
-           <label for="additionalInfoTextarea">Please list any additional qualifications or certifications</label>
-           <textarea name="additionalInfo" id="additionalInfoTextarea" cols="15" rows="5"></textarea>
-
-
-           <input type="submit" value="submit">
-          
-       </form>
-   </body>
+            <input type="submit" value="submit" />
+        </form>
+    </body>
 </html>
