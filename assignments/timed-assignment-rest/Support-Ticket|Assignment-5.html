@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Assignment 8.5</title>
+    </head>
+    <body>
+        <h1>Please address the following ticket by tomorrow!</h1>
+
+        <form>
+            <label for="fullNameInput">Full Name</label>
+            <input type="text" name="fullName" id="fullNameInput" autofocus />
+
+            <label for="emailInput">Email</label>
+            <input type="email" name="email" id="emailInput" required />
+
+            <h2>Select the priority of the issue</h2>
+
+            <label for="lowRadio">Low</label>
+            <input
+                type="radio"
+                name="issuePriority"
+                id="lowRadio"
+                value="Low"
+            />
+
+            <label for="mediumRadio">Medium</label>
+            <input
+                type="radio"
+                name="issuePriority"
+                id="mediumRadio"
+                value="Medium"
+            />
+
+            <label for="highRadio">High</label>
+            <input
+                type="radio"
+                name="issuePriority"
+                id="highRadio"
+                value="High"
+            />
+
+            <br />
+
+            <label for="issueCategorySelect">Please select the category of the issue</label>
+            <select name="issueCategory" id="issueCategorySelect">
+                <option value="Technical Issue">Technical Issue</option>
+                <option value="Billing">Billing</option>
+                <option value="Account Management">Account Management</option>
+                <option value="Other">Other</option>
+            </select>
+
+            <label for="detailedCommentsTextarea"
+                >Please describe the issue in details</label
+            >
+            <textarea
+                name="commentsInDetails"
+                id="detailedCommentsTextarea"
+                cols="15"
+                rows="5"
+            ></textarea>
+
+            <br>
+
+            <label for=relevantIssueScreenshotsInput">Please upload relevant screenshots of the issue</label>
+            <input type="file" name="relevantIssueScreenshots" id="relevantIssueScreenshotsInput" required accept="images/*">
+
+            <br />
+
+            <label for="extraCommentsTextarea"
+                >Please add any information or steps to reproduce the issue</label
+            >
+            <textarea
+                name="userExtraComments"
+                id="extraCommentsTextarea"
+                cols="15"
+                rows="5"
+            ></textarea>
+        </form>
+
+        <input type="submit" value="Submit" />
+    </body>
+</html>
