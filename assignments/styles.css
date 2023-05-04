@@ -1,5 +1,4 @@
 * {
-    padding: 0;
     margin: 0;
     box-sizing: border-box;
 }
@@ -7,7 +6,7 @@
 /* H1 */
 
 h1 {
-    background-color:aquamarine;
+    background-color: aquamarine;
     max-width: 1440px;
     margin: 0 auto;
     text-align: center;
@@ -19,8 +18,7 @@ h1 {
 
 ol {
     max-width: 1440px;
-    margin: 0 auto;
-    padding: 40px;
+
     background-color: aqua;
     cursor: pointer;
 }
@@ -30,5 +28,3 @@ ol {
 li {
     font-size: 22px;
 }
-
-
